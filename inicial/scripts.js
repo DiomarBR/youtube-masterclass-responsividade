@@ -8,7 +8,7 @@ const videos = [
     title: "Formulário Animado com JS puro e CSS Animation | Mayk Brito",
     duration: "57 min",
     thumb: "https://i.ytimg.com/vi/GykTLqODQuU/hqdefault.jpg",
-    video_id: "GykTLqODQuU"
+    video_id: "melhores-tecnologias.svg"
   },
   {
     title: "Desvendando o CSS Grid na prática | Mayk Brito",
@@ -63,8 +63,8 @@ const cards = [...document.querySelectorAll(".cards .card")];
 cards.forEach(card => {
   card.addEventListener("click", () => {
     modal.querySelector(
-      "iframe"
-    ).src = `https://www.youtube.com/embed/${card.getAttribute("id")}`;
+      "img"
+    ).src = `images/${card.getAttribute("id")}`;
     modalOverlay.classList.add("active");
     modal.classList.add("active");
     document.querySelector("body").style.overflow = "hidden";
